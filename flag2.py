@@ -17,7 +17,7 @@ class CenterOption(SpinnerOption):
         self.layout = BoxLayout(padding=5, spacing=10)
         self.add_widget(self.layout)
 
-        self.flag_image = Image(source=self.text.lower() + ".ico", size_hint=(None, None),
+        self.flag_image = Image(source=f"flag_icons/{self.text.lower()}.ico", size_hint=(None, None),
                                 size=(dp(40), dp(40)))
         self.layout.add_widget(self.flag_image)
 
